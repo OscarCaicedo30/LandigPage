@@ -1,0 +1,1526 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="stylesheet" href="/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--               BOXICONS                       -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Trabook</title>
+  <style id="custom-solution-style">* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn{
+    background-color: #FA7436 !important;
+    width: 120px;
+  }
+  
+  .log{
+    color: #FA7436 !important;
+  }
+  
+  .logo{
+    margin-left: 4rem;
+  }
+  
+  .form_nav{
+    margin-right: 4rem !important;
+  }
+  
+  .journey{
+    margin-top: 5rem !important;
+  }
+  
+  .journey h1{
+    font-size: 60px !important;
+  }
+  
+  .journey p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.729);
+    margin-top: 2rem;
+  }
+  
+  .journey span{
+    color: #FA7436;
+  }
+  
+  .discover-btn{
+    background-color: transparent;
+    padding: 12px;
+    border: 1px solid;
+    border-color: #FA7436;
+    border-radius: 5px;
+    color: #FA7436;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .discover-btn:hover{
+    background-color: #FA7436;
+    color: azure;
+  }
+  
+  .pick{
+    background: linear-gradient(to top, #FA7436, #fff);
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+  }
+  
+  .tourist{
+    position: absolute;
+    z-index: 998;
+  }
+  
+  .star{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    margin-top: 22rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.216);
+  }
+  
+  .star h6{
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  
+  .star img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+  }
+  
+  .star p{
+    font-size: 13px;
+    color: rgb(86, 83, 83);
+    font-weight: bold;
+  }
+  
+  .star_a{
+    width: 3rem;
+  }
+  
+  .star_b{
+    margin-right: 6rem;
+  }
+  
+  .awards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-top: 8rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.216);
+  }
+  
+  .awards h6 {
+    color: rgba(0, 0, 0, 0.745);
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .awards img {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 30px;
+  }
+  
+  .awards_a {
+    width: 3rem;
+  }
+  
+  .awards_b {
+    margin-top: 8px;
+    width: 5rem;
+    margin-right: 1rem;
+  }
+  
+  .explore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    margin-top: 16rem;
+    margin-left: 22rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.216);
+  }
+  
+  .explore h6 {
+    color: rgba(0, 0, 0, 0.745);
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .explore img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+  }
+  
+  .explore_a {
+    width: 3rem;
+  }
+  
+  .explore_b {
+    margin-top: 8px;
+    width: 5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .explore p {
+    font-size: 10px;
+    color: rgb(86, 83, 83);
+  }
+  
+  .explore_btn{
+    margin-left: 12rem;
+  }
+  
+  
+  /* ======== EXPLORER ========== */
+  
+  .explorer{
+    background: linear-gradient(to right, #ecd8ce38, #fff);
+    margin-top: 6rem;
+    height: 6rem;
+    width: 800px;
+    margin-left: 20%;
+    margin-bottom: 4rem;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.186);
+  }
+  
+  .explorer span{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.718);
+  }
+  
+  .explorer a{
+    color: #FA7436;
+  }
+  
+  .explore_btn{
+    background-color: transparent !important;
+    border: 1px solid #FA7436;
+    width: 120px;
+    font-weight: bold;
+    color: #FA7436;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .explore_btn:hover{
+    background-color: #FA7436 !important;
+    color: #fff;
+  }
+  
+  .location{
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    color: rgba(0, 0, 0, 0.467);
+    font-size: 13px;
+  }
+  
+  .date{
+    margin-left: 5.5rem;
+  }
+  
+  .datep {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 12rem;
+    color: rgba(0, 0, 0, 0.467);
+    font-size: 13px;
+  }
+  
+  .guest{
+    margin-left: 5.5rem;
+  }
+  
+  .guestp {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 22rem;
+    color: rgba(0, 0, 0, 0.467);
+    font-size: 13px;
+  }
+  
+  /*  ========== THINGS YOU NEED   =========== */
+  
+  .titulo {
+    font-size: 48px;
+  } 
+  
+  .parrafo1 {
+    color: rgba(0, 0, 0, 0.678);
+    width: 35%;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+   
+  .todoH1 {
+    color: #FA7436;
+  }
+  
+  .seccion_1{
+    background-color: #F7F8FC;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .section1{
+    margin-top: 2rem;
+  }
+  
+  .card-thing{
+    padding: 1rem;
+  }
+  
+  .card-thing:hover{
+    transition: 1s;
+    transform: translateY(-.25rem);
+  }
+  
+  .card-thing img{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  /*         ========= DEALS ========         */
+  .deals {
+    background: #FEFCFB;
+  }
+  
+  .deals h1 {
+    color: #222222;
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: auto;
+    /* line-height: 54px; */
+  }
+  
+  .deals span {
+    color: #FD8D3A;
+  }
+  
+  .deals-desc {
+    width: 433px;
+    margin: auto;
+    margin-top: 24px;
+    padding: 3px;
+    color: #666666;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  
+  /*  ----   deals-card   ------  */
+  .deals-card {
+    /* outline: 1px solid salmon; */
+    width: 270px;
+    height: 426px;
+  }
+  
+  .deals-card img:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+  }
+  
+  .card-body {
+    width: 100%;
+  }
+  
+  .start {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .rating {
+    margin-bottom: 0;
+  }
+  
+  .pin {
+    width: 12.57px;
+    height: 16px;
+  }
+  
+  .price-before {
+    text-decoration: line-through;
+    color: #999999;
+  }
+  
+  .price-now {
+    color: #FA7436;
+  }
+  
+  /*  ---------------------------  */
+  
+  .deal_btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  
+  .buttons_deal{
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-left: 4rem;
+  }
+  
+  .buttons_deal button {
+    margin-top: 0.5rem;
+    display: inline;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    color: rgba(0, 0, 0, 0.209);
+  }
+  
+  .buttons_deal button:hover {
+    background-color: #FA7436;
+    border: none;
+    color: #F7F8FC;
+    transition: 600ms;
+  }
+  
+  .deal_left{
+    margin-left: 12rem;
+  }
+  
+  /*           ====== VACATION PLAN ======           */
+  
+  .vacation-title{
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .vacation-title h1{
+    margin-top: 1rem;
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .vacation-title span{
+    color: #FA7436;
+  }
+  
+  .vacation-title p{
+    color: rgba(0, 0, 0, 0.59);
+    width: 40%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+  
+  .buttons_vacation{
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .buttons_vacation button{
+    margin-top: 0.5rem;
+    display: inline;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    color: rgba(0, 0, 0, 0.209);
+  }
+  
+  .buttons_vacation button:hover{
+    background-color: #FA7436;
+    border: none;
+    color: #F7F8FC;
+    transition: 600ms;
+  }
+  
+  .btn-right{
+   margin-left: 1.5rem;
+  }
+  
+  .btn-left{
+    margin-left: 65%;
+  }
+  
+  .card-vacation:hover{
+    transition: all 1s ease;
+    transform: scale(1.05);
+  }
+  
+  .card-vacation p{
+    font-size: 13px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .card-vacation h6{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.485);
+  }
+  
+  .card-vacation h5{
+    font-size: 14px;
+  }
+  
+  .bxs-star{
+    color: rgb(235, 184, 16);
+    font-size: 15px;
+  }
+  
+  
+  /*  ============ WHAT PEOPLE SAY =========== */
+  .section2J {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+    padding-top: 4rem;
+  }
+  
+  .section2J__cont1 {
+    margin: 30px;
+    margin-right: 2rem;
+  }
+  
+  .section2J__cont2{
+    margin-top: 2rem;
+    margin-left: 4rem;
+  }
+  
+  .button_carousel1J {
+    margin-top: 320px;
+  }
+  
+  .button_carousel2J {
+    margin-top: 320px;
+    margin-right: 73%;
+  }
+  
+  .section2J__icon1 {
+    border-radius: 50%;
+    background-color: #666666;
+  }
+  
+  .section2J__icon2 {
+    border-radius: 50%;
+    background-color: #FA7436 !important;
+  }
+  
+  .section2J__titl1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222222;
+  }
+  
+  .section2J__titl2 {
+    color: #FA7436;
+  }
+  
+  .section2J__parr1 {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+  
+  .section2J__cont2_img {
+    display: flex;
+    margin-top: -60px;
+    margin-left: -50px;
+  }
+  
+  .section2J__cont2-card1 {
+    box-shadow: 46px 46px 46px 26px rgba(0, 0, 0, 0.094);
+    width: 500px;
+    z-index: 900;
+  }
+  
+  .section2J__cont2_tiitl1 {
+    margin-left: 9px;
+  }
+  
+  .section2J__cont2-card2 {
+    height: 280px;
+    margin-left: 50px;
+    background-color: #c5c6c979;
+    margin-top: -200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.044);
+  }
+  
+  .section2J__cont2-text {
+    margin-top: 140px;
+  }
+  
+  .text1 {
+    font-size: 18px;
+  }
+  
+  .text12 {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 0.5rem;
+    color: #66666659;
+  }
+  
+  .section2J__cont2_img_edit{
+    border-radius: 50%;
+  }
+  
+  .jp{
+    font-weight: 600;
+  }
+  
+  .pakistan{
+    color: #666666;
+    margin-left: 0.5rem;
+  }
+  
+  .chris{
+    color: #6666669b;
+  }
+  
+  .buttons_people{
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .buttons_people button{
+    margin-top: 0.5rem;
+      display: inline;
+      background-color: transparent;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.202);
+      color: rgba(0, 0, 0, 0.209);
+  }
+  
+  .buttons_people button:hover {
+    background-color: #FA7436;
+    border: none;
+    color: #F7F8FC;
+    transition: 600ms;
+  }
+  
+  .people_right{
+    margin-right: 18rem;
+    margin-left: 1rem;
+  }
+  
+  .comment_gif{
+    position: absolute;
+  }
+  
+  .comment_gif img{
+      width: 140px;
+      margin-left: 20rem;
+  }
+  
+  /* =========== UPDATES =========== */
+  .updates {
+    background: #FEFCFB;
+    padding-bottom: 2rem;
+  }
+  
+  .updates-card {
+    /* outline: 1px solid salmon; */
+    width: 270px;
+    height: 426px;
+  }
+  
+  .updates-card img:hover {
+    /* filter: brightness(50%); */
+    cursor: pointer;
+  }
+  
+  .updates h1 {
+    color: #222222;
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: auto;
+    line-height: 54px;
+  }
+  
+  .updates span {
+    color: #FD8D3A;
+  }
+  
+  .updates p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222222;
+  }
+  
+  .updates p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+  }
+  
+  .o-circle {
+    width: 14px;
+    height: 14px;
+    background-color: #FA7436;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .g-circle {
+    width: 10px;
+    height: 10px;
+    background: #E5E5E5;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  /* =========== SUBSCRIBE CARD ========= */
+  
+  .subscribe {
+    position: absolute;
+    background-image: url(./assets/Subscribe.png);
+    width: 1170px;
+    height: 416px;
+  }
+  
+  .subscribe h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    margin: auto;
+    line-height: 62px;
+    width: 708px;
+    text-align: center;
+  }
+  
+  .input-wraper {
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 674px;
+    height: 68px;
+  }
+  
+  .subscribe form {
+    width: 100%;
+  }
+  
+  .email-icon {
+    width: 28px;
+  }
+  
+  .subscribe input:focus {
+    box-shadow: none;
+    border: none;
+  }
+  
+  .subscribe-btn {
+    width: 132px;
+    height: 50px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #FA7436;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .subscribe-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding-bottom: 10rem;
+  }
+  
+  /*   =========== FOOTER =========== */
+  .footer-container {
+    background-color: #F7F8FC;
+    height: 600px;
+    padding-top: 20rem;
+  }
+  
+  .row-social {
+    margin-left: 12% !important;
+  }
+  
+  .book p {
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.529);
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.112);
+  }
+  
+  .social:hover {
+    background-color: #FA7436;
+    color: #F7F8FC;
+    transition: 1s;
+  }
+  
+  .social-btns {
+    position: relative !important;
+    height: 60px !important;
+  }
+  
+  .social-i {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  
+  .social-t {
+    margin-right: 19rem;
+  }
+  
+  .bxl-facebook-circle {
+    position: absolute;
+    margin-top: 9px;
+    font-size: 25px;
+    margin-left: 3px;
+  }
+  
+  .bxl-instagram {
+    position: absolute;
+    margin-top: 9px;
+    font-size: 25px;
+    margin-left: 2px;
+  }
+  
+  .bxl-twitter {
+    position: absolute;
+    margin-top: 9px;
+    font-size: 25px;
+    margin-left: 2px;
+  }
+  
+  .col-2-company a {
+    text-decoration: none;
+  }
+  
+  .col-2-company h6 {
+    font-weight: bolder;
+  }
+  
+  .col-2-company p {
+    color: rgba(0, 0, 0, 0.581);
+    font-weight: lighter;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .col-2-company a h6 {
+    margin-left: 2rem !important;
+  }
+  
+  .about-p {
+    margin-top: 2.5rem;
+  }
+  
+  .copyright p {
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 12px;
+  }
+  
+  
+  .rights {
+    display: inline;
+    margin-left: 3rem;
+    margin-right: 36rem;
+  }
+  
+ 
+  /*=============== SCROLL BAR ===============*/
+  ::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(var(--body-color), 8%, 38%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 104, 4, 0.438);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:rgba(255, 104, 4, 0.687);
+  }</style></head>
+  
+  <body style="padding: 0; margin: 0; height: 100vh;">
+  
+    <!--===== HEADER =====-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"><img src="/assets/Logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex form_nav" role="search">
+            <a class="nav-link active mx-5 mt-2 fw-bold log" aria-current="page" href="#">Login</a>
+            <button class="btn text-white fw-bold" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- ====== MAIN ======= -->
+  
+    <div class="container gray-100">
+      <div class="row">
+        <div class="col-sm-5 col-md-6 journey">
+          <h1>Get Started your</h1>
+          <h1>exciting <span>journey</span>
+            </h1><h1>with us.</h1>
+          
+          <p>A Team of experienced tourism professionals will <br> provide you with the
+            best
+            advice and
+            tips for your <br> desire
+            place.</p>
+          <button class="discover-btn fw-bold" type="submit">Discover now</button>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+          <div class="pick">
+            <div class="tourist">
+              <img src="/assets/tourist-with-thumb-up__1_-removebg 1.png">
+            </div>
+            <div class="star">
+              <div class="star_a">
+                <img src="/assets/gold-star.gif">
+              </div>
+              <div class="star_b">
+                <h6> 27k </h6>
+                <p>customers</p>
+              </div>
+            </div>
+            <div class="awards">
+              <div class="awards_a">
+                <img src="/assets/twinkle-crown.gif">
+              </div>
+              <div class="awards_b">
+                <h6> Best Tour</h6>
+                <h6> Awards </h6>
+              </div>
+            </div>
+            <div class="explore">
+              <div class="explore_a">
+                <img src="/assets/area-map.gif">
+              </div>
+              <div class="explore_b">
+                <h6> Explore</h6>
+                <p> Every cornar of the world with us </p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+  
+    <!--  ==== EXPLORER ==== -->
+  
+    <div class="container-explorer lg">
+      <nav class="navbar navbar-expand-lg explorer">
+        <div class="container-fluid explo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row">
+              <div class="col">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>Location</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <div class="location">
+                    <p>Where are you going</p>
+                  </div>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="date">Date</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <div class="datep">
+                    <p>When you will go</p>
+                  </div>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="guest">Guest</span>
+                    </a>
+  
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <div class="guestp">
+                    <p>Number of Guest</p>
+                  </div>
+                </ul>
+  
+              </div>
+              <div class="col">
+                <form class="d-flex" role="search">
+                  <button class="explore_btn" type="submit">Explore now</button>
+                </form>
+              </div>
+            </div>
+  
+  
+          </div>
+        </div>
+      </nav>
+  
+      <!-- ====== THINGS YOU NEED ======== -->
+      <div class="seccion_1">
+        <div class="section1">
+          <h1 class="text-center titulo">Things you need <span class="todoH1">to do</span></h1>
+          <p class="parrafo1">We ensure that you'll embark on a perfectly plannd, safe vocation at a price you can
+            afford.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 w-75 m-auto mb-5">
+          <div class="col">
+            <div class="card card-thing">
+              <img src="./assets/Group(2).png" width="46.57" height="48" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-5"><span>Sign Up</span></h5>
+                <p class="card-text">Completes all the work associated br with planning and processing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-thing">
+              <img src="./assets/Group.png" width="46.57" height="48" class="section1_img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-5"><span>Worth of Money</span></h5>
+                <p class="card-text">After succesful acces then book from exclusive deals &amp; pricing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-thing">
+              <img src="./assets/Group(1).png" width="46.57" height="48" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-5"><span>Exciting Travel</span></h5>
+                <p class="card-text">Start and explore a widi range exceting travel experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- ====== DEALS ======= -->
+      <section class="deals pt-5">
+        <div class="d-flex flex-column">
+          <h1>Exclusive <span>deals &amp; discounts</span></h1>
+          <p class="deals-desc">Discover our fantastic early booking discounts &amp; start planning you journey.</p>
+        </div>
+  
+        <div class="d-flex flex-row mt-5 justify-content-center">
+          <div class="deals-card mx-2">
+            <div class="card d-flex">
+              <img class="card-img-top" src="./assets/Image(1).png" alt="Card image cap">
+              <div class="card-body px-3 pt-4 pb-0 d-flex flex-row justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Madrid</h5>
+                <div class=" d-flex flex-row align-items-center">
+                  <img class="start" src="./assets/gold-star.gif" alt="start">
+                  <p class="rating mb-0 ms-1">4.8</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card-body pb-4 d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center">
+                  <img class="pin" src="./assets/pin.png" alt="">
+                  <p class="country mb-0 ms-1">Spain</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <p class="price-before mb-0">$950</p>
+                  <p class="price-now mb-0 ms-3">$850</p> <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="deals-card mx-2">
+            <div class="card d-flex">
+              <img class="card-img-top" src="./assets/image(12).png" alt="Card image cap">
+              <div class="card-body px-3 pt-4 pb-0 d-flex flex-row justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Firenze</h5>
+                <div class=" d-flex flex-row align-items-center">
+                  <img class="start" src="./assets/gold-star.gif" alt="start">
+                  <p class="rating mb-0 ms-1">4.5</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card-body pb-4 d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center">
+                  <img class="pin" src="./assets/pin.png" alt="">
+                  <p class="country mb-0 ms-1">Italy</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <p class="price-before mb-0">$850</p>
+                  <p class="price-now mb-0 ms-3">$750</p> <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="deals-card mx-2">
+            <div class="card d-flex">
+              <img class="card-img-top" src="./assets/Image (2).png" alt="Card image cap">
+              <div class="card-body px-3 pt-4 pb-0 d-flex flex-row justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Paris</h5>
+                <div class=" d-flex flex-row align-items-center">
+                  <img class="start" src="./assets/gold-star.gif" alt="start">
+                  <p class="rating mb-0 ms-1">4.4</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card-body pb-4 d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center">
+                  <img class="pin" src="./assets/pin.png" alt="">
+                  <p class="country mb-0 ms-1">France</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <p class="price-before mb-0">$699</p>
+                  <p class="price-now mb-0 ms-3">$599</p> <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="deals-card mx-2">
+            <div class="card d-flex">
+              <img class="card-img-top" src="./assets/Image(3).png" alt="Card image cap">
+              <div class="card-body px-3 pt-4 pb-0 d-flex flex-row justify-content-between align-items-center">
+                <h5 class="card-title mb-0">London</h5>
+                <div class=" d-flex flex-row align-items-center">
+                  <img class="start" src="./assets/gold-star.gif" alt="start">
+                  <p class="rating mb-0 ms-1">4.8</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card-body pb-4 d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center">
+                  <img class="pin" src="./assets/pin.png" alt="">
+                  <p class="country mb-0 ms-1">UK</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <p class="price-before mb-0">$950</p>
+                  <p class="price-now mb-0 ms-3">$850</p> <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="deal_btn">
+          <div class="buttons_deal">
+            <button class="deal_left "><i class="bx bx-left-arrow-alt"></i></button>
+            <button class="people_right"><i class="bx bx-right-arrow-alt"></i></button>
+          </div>
+        </div>
+  
+      </section>
+  
+  
+      <!-- ===== BEST VACATION PLAN ===== -->
+      <div class="vacation-container">
+        <div class="vacation-title">
+          <h1>Best <span>vacation plan</span></h1>
+          <p>Plan your perfect vacation with our travel agency. Choose amoung hundreds of all-inclusive offers!</p>
+          <div class="buttons_vacation">
+            <button class="btn-left"><i class="bx bx-left-arrow-alt"></i></button>
+            <button class="btn-right"><i class="bx bx-right-arrow-alt"></i></button>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4 w-75 m-auto mb-5">
+            <div class="col">
+              <div class="card card-vacation">
+                <img src="./assets/pexels-vacation.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <h5 class="card-title fw-bold">Rome, Italy</h5>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title fw-bold"><span>$5,42k</span></h6>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <p> <span><i class="bx bx-navigation bx-burst"></i></span> 10 days Trip</p>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title "><span class="icon-star"><i class="bx bxs-star"></i></span> 4.8
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-vacation">
+                <img src="./assets/pexels-vacation2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <h5 class="card-title fw-bold">London,UK</h5>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title fw-bold"><span>$2,42k</span></h6>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <p> <span><i class="bx bx-navigation bx-burst"></i></span> 07 days Trip</p>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title "><span class="icon-star"><i class="bx bxs-star"></i></span> 4.7
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-vacation">
+                <img src="./assets/pexels-vacation3.jpg" class="card-img-top">
+                <div class="card-body">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <h5 class="card-title fw-bold">Osaka, Japan</h5>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title fw-bold"><span>$8,42k</span></h6>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <p> <span><i class="bx bx-navigation bx-burst"></i></span> 12 days Trip</p>
+                    </div>
+                    <div class="col">
+                      <h6 class="card-title "><span class="icon-star"><i class="bx bxs-star"></i></span> 4.5</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <!-- ========== WHAT PEOPLE SAY ============ -->
+        <section class="section2J">
+          <div class="section2J__cont1">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <h1 class="section2J__titl1">What people say <br>
+                    <span class="section2J__titl2">about us.</span>
+                  </h1>
+  
+                  <p class="section2J__parr1">Our Clients send us bunch of smilies with our services <br> and we love
+                    them.</p>
+                </div>
+              </div>
+  
+            </div>
+            <div class="buttons_people">
+              <button class="people_left "><i class="bx bx-left-arrow-alt"></i></button>
+              <button class="people_right"><i class="bx bx-right-arrow-alt"></i></button>
+            </div>
+          </div>
+          <div class="section2J__cont2">
+            <div class="card section2J__cont2-card1">
+              <div class="card-body">
+                <div class="section2J__cont2_img">
+                  <img class="section2J__cont2_img_edit" src="./assets/people.jpeg" alt="">
+                </div>
+                <p class="card-text jp">“On the Windows talking painted pasture yet its express parties use. Sure last
+                  upon
+                  he same
+                  as knew next. Of believed or diverted no.”</p>
+                <div class="comment_gif">
+                  <img src="/assets/discussions.gif">
+                </div>
+                <br><br>
+                <h1 class="fs-5 section2J__cont2_tiitl1">Mike taylor</h1>
+                <p class="fs-5 pakistan">Lahore, Pakistan</p>
+              </div>
+            </div>
+            <div clas="">
+              <div class="card section2J__cont2-card2" style="width: 34rem;">
+                <div class="card-body">
+  
+                  <br><br>
+                  <div class="section2J__cont2-text">
+                    <h1 class=" text1  section2J__cont2_tiitl1 chris">Chris Thomas</h1>
+                    <p class="text12">CEO of Red Button</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+  
+        <!-- ========= UPDATES ========= -->
+        <section class="updates pt-5">
+          <div class="d-flex flex-column">
+            <h1>Get update with <span>latest blog</span></h1>
+          </div>
+  
+          <div class="d-flex flex-row mt-5 justify-content-center">
+            <div class="updates-card mx-2">
+              <div class="card d-flex border border-white">
+                <img class="card-img-top" src="./assets/Image21.png" alt="Card image cap">
+                <div class="card-body px-0 pt-3 pb-0 d-flex flex-column justify-content-between align-items-start">
+                  <p class="mb-0">The Amazing Difference a Year of Traveling.</p>
+                  <p class="mt-2">July 27, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="updates-card mx-2">
+              <div class="card d-flex border border-white">
+                <img class="card-img-top" src="./assets/Image(4).png" alt="Card image cap">
+                <div class="card-body px-0 pt-3 pb-0 d-flex flex-column justify-content-between align-items-start">
+                  <p class="mb-0">Travel far enough, you meet yourself.</p>
+                  <p class="mt-2">July 27, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="updates-card mx-2">
+              <div class="card d-flex border border-white">
+                <img class="card-img-top" src="./assets/Image (5).png" alt="Card image cap">
+                <div class="card-body px-0 pt-3 pb-0 d-flex flex-column justify-content-between align-items-start">
+                  <p class="mb-0">How to Save Money While Visiting Africa.</p>
+                  <p class="mt-2">July 27, 2021</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="updates-card mx-2">
+              <div class="card d-flex border border-white">
+                <img class="card-img-top" src="./assets/Image (6).png" alt="Card image cap">
+                <div class="card-body px-0 pt-3 pb-0 d-flex flex-column justify-content-between align-items-start">
+                  <p class="mb-0">Reflections on 5 Months of Travel: Time to Hang</p>
+                  <p class="mt-2">July 27, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex flex-row justify-content-center align-items-center ">
+            <div class="g-circle mx-2"></div>
+            <div class="o-circle"></div>
+            <div class="g-circle mx-2"></div>
+          </div>
+  
+        </section>
+  
+        <!-- ========= SUBSCRIBE ========= -->
+  
+        <div class="subscribe-container">
+          <section class="subscribe d-flex flex-column align-items-center my-5">
+            <h1 class="my-5">Subscribe and get exclusive deals &amp; offer</h1>
+            <div class="input-wraper d-flex flex-row align-items-center justify-content-between">
+              <form class="d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                  <img class="email-icon ms-3" src="./assets/email.png" alt="">
+                  <input class="ms-1 border border-light" type="email" name="email" placeholder="Enter your mail">
+                </div>
+                <button class="subscribe-btn me-3" type="submit">Suscribe</button>
+              </form>
+            </div>
+          </section>
+        </div>
+  
+        <!-- ========= FOOTER ========== -->
+        <div class="footer-container">
+          <div class="row w-75 row-social">
+            <div class="col col-1-logo col-md-6">
+              <div class="logo-footer">
+                <img src="/assets/Logo.png">
+              </div>
+              <div class="book">
+                <p>Book your trip in a minute, get full control <br> for much longer.</p>
+              </div>
+              <div class="row social-btns">
+                <div class="col social social-f"><i class="bx bxl-facebook-circle"></i></div>
+                <div class="col social social-i"><i class="bx bxl-instagram"></i></div>
+                <div class="col social social-t"><i class="bx bxl-twitter"></i></div>
+              </div>
+            </div>
+            <div class="col col-2-company">
+              <h6>Company</h6>
+              <a href="#">
+                <p class="about-p">About</p>
+              </a>
+              <a href="#">
+                <p>Careers</p>
+              </a>
+              <a href="#">
+                <p>Logistic</p>
+              </a>
+              <a href="#">
+                <p>Privacy &amp; Policy</p>
+              </a>
+            </div>
+            <div class="col">
+              <div class="col col-2-company">
+                <h6>Contacto</h6>
+                <a href="#">
+                  <p class="about-p">About</p>
+                </a>
+                <a href="#">
+                  <p>Help/FAQ</p>
+                </a>
+                <a href="#">
+                  <p>Press</p>
+                </a>
+                <a href="#">
+                  <p>Afiliates</p>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col col-2-company">
+                <h6>More</h6>
+                <a href="#">
+                  <p class="about-p">About</p>
+                </a>
+                <a href="#">
+                  <p>Press </p><center></center>
+                  <p></p>
+                </a>
+                <a href="#">
+                  <p>Our Blog</p>
+                </a>
+                <a href="#">
+                  <p>Low Fare Tips</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container copy">
+            <div class="row  copyright justify-content-between">
+              <div class="col rights">
+                <p>Copyright, Trabook 2022. All rights reserved</p>
+              </div>
+              <div class="col terms">
+                <p>Terms &amp; conditions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+  
+  </div></div><script type="text/javascript" id="javascript-vanilla"></script></body></html>
+
+
